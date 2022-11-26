@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+
+    <title>Form</title>
+  </head>
+  <body>
+    <div class="login-page">
+        <div class="form">
+          <form class="login-form" method="post" action="welcomePage.html" enctype="multipart/form-data">
+            <input id="userName" type="text" placeholder="username" required/>
+            <input id="password" type="password" placeholder="password" required/>
+            <button type="submit">login</button>
+            <button type="button" onclick="cancel()">Cancel</button>
+          </form>
+        </div>
+      </div>
+  </body>
+</html>
+
+<script>
+    function cancel(){
+      document.getElementById("userName").value = '';
+      document.getElementById("password").value = '';
+
+    }
+</script>
